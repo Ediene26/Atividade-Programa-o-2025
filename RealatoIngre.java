@@ -33,3 +33,4 @@ public class RealatoIngre {
     System.out.printf("Total arrecadado: R$ %.2f%n", valorTotal);
     }
 }
+

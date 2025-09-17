@@ -23,7 +23,7 @@ public class MainBilhete{
         String resposta = sc.nextLine();
         if (resposta.equalsIgnoreCase("N")) break;
     }
-
+    
     sc.close();
     relatorio.imprimir();
     }
