@@ -14,10 +14,10 @@ public class MainBilhete{
         bilhete.setIdadeCli(sc.nextInt());
         sc.nextLine(); // limpar buffer
 
-        double totalCliente = bilhete.calcularTotal();
-        bilhete.realizarPagamento(totalCliente);
+        double precoTotal = bilhete.getPreco() * bilhete.getQuantIngre();
+        bilhete.realizarPagamento(precoTotal);
 
-        relatorio.atualizar(bilhete, totalCliente);
+        relatorio.atualizar(bilhete, precoTotal);
 
         System.out.print("\nAtender próximo cliente? (S/N): ");
         String resposta = sc.nextLine();
@@ -28,4 +28,3 @@ public class MainBilhete{
     relatorio.imprimir();
     }
 }
-
