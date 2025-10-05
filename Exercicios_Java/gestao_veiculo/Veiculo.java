@@ -47,3 +47,4 @@ public class Veiculo{
         System.out.println("Preço: " + getPreco());
     }
 }
+
